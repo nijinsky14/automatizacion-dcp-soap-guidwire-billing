@@ -1,0 +1,22 @@
+<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:soap1="http://guidewire.com/ws/soapheaders" xmlns:san="http://www.sancristobal.com.ar">
+   <soap:Header>
+      <soap1:gw_locale>es_AR</soap1:gw_locale>
+      <soap1:gw_language>es_AR</soap1:gw_language>
+      <soap1:authentication>
+         <soap1:username>{{username}}</soap1:username>
+         <soap1:password>{{password}}</soap1:password>
+      </soap1:authentication>
+   </soap:Header>
+   <soap:Body>
+      <san:createProducerPromise>
+         <san:nivel>{{nivel}}</san:nivel>
+         <san:producerCode>{{producerCode}}</san:producerCode>
+         <san:organizerCode>{{organizerCode}}</san:organizerCode>
+         <san:currency>{{currency}}</san:currency>
+         <san:country>{{country}}</san:country>
+         <san:branchOffice>{{branchOffice}}</san:branchOffice>
+         <san:alias>{{alias}}</san:alias>
+         <san:userPortal>{{userPortal}}</san:userPortal>
+      </san:createProducerPromise>
+   </soap:Body>
+</soap:Envelope>
